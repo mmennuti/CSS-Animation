@@ -1,0 +1,592 @@
+#container {
+    width: 640px;
+    height: 480px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes shift {
+    from {
+    }
+
+    to {
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%, 50% 45%);
+    }
+}
+
+.wedge {
+    background-color: #869CC7;
+    clip-path: polygon(47% 40%, 53% 40%, 51% 45%, 49% 45%);
+    height: 50vmin;
+    width: 50vmin;
+    top: 25vmin;
+    left: 25vmin;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+}
+
+.wedgeshift {
+    background-color: #869CC7;
+    clip-path: polygon(47% 40%, 53% 40%, 51% 45%, 49% 45%);
+    height: 50vmin;
+    width: 50vmin;
+    top: 25vmin;
+    left: 25vmin;
+    position: absolute;
+    animation-name: shift;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.poly {
+    background-color: #869CC7;
+    clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    height: 50vmin;
+    width: 50vmin;
+    top: 25vmin;
+    left: 25vmin;
+    position: absolute;
+    transform: perspective(100px);
+}
+
+.noDisplay{
+    display: none;
+}
+
+#wedge2 {
+    animation-delay: .12s;
+}
+
+#wedge3 {
+    animation-delay: .24s;
+}
+
+#wedge4 {
+    animation-delay: .36s;
+}
+
+#wedge5 {
+    animation-delay: .48s;
+}
+
+#wedge6 {
+    animation-delay: .60s;
+}
+
+#wedge7 {
+    animation-delay: .72s;
+}
+
+body {
+    background-color: #30938C;
+}
+
+.poly.polyAnim {
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes cat0 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: white;
+        clip-path: polygon(62% 11%, 83% 0, 83% 25%);
+    }
+}
+
+
+.poly.poly0 {
+    animation-name: cat0;
+    animation-delay: 0s;
+}
+
+@keyframes cat1 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: white;
+        clip-path: polygon(17% 0, 38% 11%, 17% 25%);
+    }
+}
+
+
+.poly.poly1 {
+    animation-name: cat1;
+    animation-delay: .05s;
+}
+
+@keyframes cat2 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(17% 25%, 38% 11%, 62% 11%);
+    }
+}
+
+
+.poly.poly2 {
+    animation-name: cat2;
+    animation-delay: .1s;
+}
+
+@keyframes cat3 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(17% 25%, 62% 11%, 83% 25%);
+    }
+}
+
+
+.poly.poly3 {
+    animation-name: cat3;
+    animation-delay: .15s;
+}
+
+@keyframes cat4 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(17% 25%, 17% 89%, 0 50%);
+    }
+}
+
+
+.poly.poly4 {
+    animation-name: cat4;
+    animation-delay: .2s;
+}
+
+@keyframes cat5 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(0 50%, 17% 89%, 5% 80%);
+    }
+}
+
+
+.poly.poly5 {
+    animation-name: cat5;
+    animation-delay: .25s;
+}
+
+@keyframes cat6 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(83% 25%, 100% 50%, 83% 89%);
+    }
+}
+
+
+.poly.poly6 {
+    animation-name: cat6;
+    animation-delay: .3s;
+}
+
+@keyframes cat7 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(100% 50%, 95% 80%, 83% 89%);
+    }
+}
+
+
+.poly.poly7 {
+    animation-name: cat7;
+    animation-delay: .35s;
+}
+
+@keyframes cat8 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(17% 25%, 83% 25%, 17% 48%);
+    }
+}
+
+
+.poly.poly8 {
+    animation-name: cat8;
+    animation-delay: .4s;
+}
+
+@keyframes cat9 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(83% 25%, 83% 48%, 17% 48%);
+    }
+}
+
+
+.poly.poly9 {
+    animation-name: cat9;
+    animation-delay: .45s;
+}
+
+@keyframes cat10 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(17% 48%, 83% 48%, 50% 70%);
+    }
+}
+
+
+.poly.poly10 {
+    animation-name: cat10;
+    animation-delay: .5s;
+}
+
+@keyframes cat11 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #FFDFA2;
+        clip-path: polygon(17% 48%, 42% 52%, 32% 57.88%);
+    }
+}
+
+
+.poly.poly11 {
+    animation-name: cat11;
+    animation-delay: .55s;
+    z-index: 2;
+}
+
+@keyframes cat12 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: black;
+        clip-path: polygon(32% 50.5%, 32% 57.88%, 26% 53.90%);
+    }
+}
+
+
+.poly.poly12 {
+    animation-name: cat12;
+    animation-delay: .6s;
+    z-index:3;
+}
+
+@keyframes cat13 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: white;
+        clip-path: polygon(42% 52%, 58% 52%, 41% 64%);
+    }
+}
+
+
+.poly.poly13 {
+    animation-name: cat13;
+    animation-delay: .65s;
+}
+
+@keyframes cat14 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: white;
+        clip-path: polygon(58% 52%, 59% 64%, 41% 64%);
+    }
+}
+
+
+.poly.poly14 {
+    animation-name: cat14;
+    animation-delay: .7s;
+}
+
+@keyframes cat15 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #FFDFA2;
+        clip-path: polygon(58% 52%, 83% 48%, 68% 57.88%);
+    }
+}
+
+
+.poly.poly15 {
+    animation-name: cat15;
+    animation-delay: .75s;
+    z-index: 2;
+}
+
+@keyframes cat16 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: black;
+        clip-path: polygon(68% 50.5%, 74% 53.90%, 68% 57.88%);
+    }
+}
+
+
+.poly.poly16 {
+    animation-name: cat16;
+    animation-delay: .8s;
+    z-index: 3;
+}
+
+@keyframes cat17 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: black;
+        clip-path: polygon(41% 64%, 59% 64%, 50% 70%);
+    }
+}
+
+
+.poly.poly17 {
+    animation-name: cat17;
+    animation-delay: .85s;
+}
+
+@keyframes cat18 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(17% 48%, 50% 70%, 17% 84% );
+    }
+}
+
+
+.poly.poly18 {
+    animation-name: cat18;
+    animation-delay: .9s;
+}
+
+@keyframes cat19 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(83% 48%, 83% 84%, 50% 70%);
+    }
+}
+
+
+.poly.poly19 {
+    animation-name: cat19;
+    animation-delay: .95s;
+}
+
+@keyframes cat20 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: white;
+        clip-path: polygon(17% 84%, 50% 70%, 36% 89%);
+    }
+}
+
+
+.poly.poly20 {
+    animation-name: cat20;
+    animation-delay: 1s;
+}
+
+@keyframes cat21 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: white;
+        clip-path: polygon(50% 70%, 83% 84%, 64% 89%);
+    }
+}
+
+
+.poly.poly21 {
+    animation-name: cat21;
+    animation-delay: 1.05s;
+}
+
+@keyframes cat22 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(50% 70%, 64% 89%, 36% 89%);
+    }
+}
+
+
+.poly.poly22 {
+    animation-name: cat22;
+    animation-delay: 1.1s;
+}
+
+@keyframes cat23 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(17% 84%, 36% 89%,  17% 89%);
+    }
+}
+
+
+.poly.poly23 {
+    animation-name: cat23;
+    animation-delay: 1.15s;
+}
+
+@keyframes cat24 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(83% 84%, 83% 89%, 64% 89%);
+    }
+}
+
+
+.poly.poly24 {
+    animation-name: cat24;
+    animation-delay: 1.2s;
+}
+
+@keyframes cat25 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(17% 89%, 83% 89%, 38% 100%);
+    }
+}
+
+
+.poly.poly25 {
+    animation-name: cat25;
+    animation-delay: 1.25s;
+}
+
+@keyframes cat26 {
+    from {
+        background-color: #869CC7;
+        clip-path: polygon(47% 40%, 53% 40%, 50% 45%);
+    }
+
+    to {
+        background-color: #C9870B;
+        clip-path: polygon(38% 100%, 83% 89%, 62% 100%);
+    }
+}
+
+
+.poly.poly26 {
+    animation-name: cat26;
+    animation-delay: 1.3s;
+}
+
